@@ -1,0 +1,34 @@
+<div class="jr-dashboard">
+  <div class="jr-dashboard__buttons" aria-label="Chart Controls">
+    <button 
+      mat-raised-button 
+      class="jr-dashboard__btn" 
+      (click)="addNewSeries()" 
+      aria-label="Add a new data series to the chart">
+      Add Series
+    </button>
+
+    <button 
+      mat-raised-button 
+      class="jr-dashboard__btn" 
+      (click)="toggleChartType()" 
+      aria-label="Toggle between line and column chart types">
+      Toggle to {{ nonCurrentChartType | titlecase }}
+    </button>
+  </div>
+
+  <section class="jr-dashboard__chart" aria-label="Temperature Chart">
+    <highcharts-chart 
+      #chart
+      [Highcharts]="Highcharts" 
+      [callbackFunction]="onChartCallback"
+      [options]="chartOptions"
+      [(update)]="updateChartFlag">
+    </highcharts-chart>
+  </section>
+
+  <!-- Display the current chart type -->
+  <div class="jr-dashboard__currentChartType">
+    <p class="jr-dashboard__p"><strong>Current Chart Type</strong>: {{ currentChartType  | titlecase }}</p>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div aria-label="Draggable Panel"
+     class="jr-drag-leg" 
+     cdkDragBoundary=".jr-drag-leg__wrapper" 
+     cdkDrag 
+     role="region" 
+     tabindex="0">
+  <header class="jr-drag-leg__header" role="banner">
+    <!-- Drag Icon with ARIA Label -->
+    <div class="jr-drag-leg__header-item">
+      <div role="button">
+        <mat-icon aria-hidden="false" aria-label="Drag the panel" fontIcon="drag_indicator" tabindex="0"></mat-icon>
+      </div>
+    </div>
+
+    <!-- Header Centered Text -->
+    <div class="jr-drag-leg__header-item jr-drag-leg__header-item--centered" role="heading" aria-level="2">
+      {{ header }}
+    </div>
+
+    <!-- Toggle Icon for expanding/collapsing content -->
+    <div class="jr-drag-leg__header-item">
+      <div role="button">
+        <mat-icon class="clickable" aria-label="Expand the panel" [ngClass]="isJrDragLegOpen ? 'opened' : 'closed'" (click)="toggleJrDragLegOpen()">
+          {{ isJrDragLegOpen ? 'expand_less' : 'expand_more' }}
+        </mat-icon>
+      </div>
+    </div>
+  </header>
+
+  <!-- Expandable Content Area -->
+  <div 
+    class="jr-drag-leg__content"
+    [attr.aria-hidden]="!isJrDragLegOpen" 
+    [ngClass]="isJrDragLegOpen ? 'jr-drag-leg__content--open' : 'jr-drag-leg__content--closed'"
+    role="region"
+    id="dragLegContent">
+    
+    <!-- List of Items -->
+    <jr-drag-leg-items *ngIf="panes && panes.length" 
+      [items]="panes[0].items"
+      aria-label="Draggable items list">
+    </jr-drag-leg-items>
+  </div>
+</div>
