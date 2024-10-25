@@ -1,4 +1,4 @@
-# Angular Production Course
+# JR Angular
 
 ![JR Angular](/src/assets/jr-angular-app.png)
 
