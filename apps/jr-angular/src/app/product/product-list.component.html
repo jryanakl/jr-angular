@@ -1,0 +1,23 @@
+<div class="product-list">
+  <div class="product-list__fields">
+    <input type="search" (input)="onQueryChange($any($event.target).value)" />
+    <select (change)="onSortChange($any($event.target).value)">
+      <option value="name">Name</option>
+      <option value="price">Price</option>
+    </select>
+  </div>
+
+  <div class="product-list__results">
+    <ng-container *ngIf="loading$ | async; else data">
+      <p>Loading…</p>
+    </ng-container>
+
+    <ng-template #data>
+      <ul>
+        <li *ngFor="let item of (items$ | async)">{{ item.name }}</li>
+      </ul>
+      <jr-paginator [total]="(total$ | async)!" (page)="onPageChange($any($event.target).value)"></jr-paginator>
+      <p class="error" *ngIf="error$ | async as e">Error: {{ e.message }}</p>
+    </ng-template>
+  </div>
+</div>

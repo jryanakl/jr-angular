@@ -1,0 +1,31 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "jr-ui",
+  "projectType": "library",
+  "sourceRoot": "libs/jr-ui/src",
+  "prefix": "jr",
+  "targets": {
+    "lint": {
+      "executor": "@angular-devkit/build-angular:tslint",
+      "options": {
+        "tsConfig": [
+          "libs/jr-ui/tsconfig.lib.json"
+        ],
+        "exclude": [
+          "**/node_modules/**",
+          "!libs/jr-ui/**/*"
+        ],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "libs/jr-ui/src/styles"
+          ]
+        }
+      }
+    }
+  },
+  "generators": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.jr-logo {
+  display: inline-flex;
+  align-items: center;
+
+  &__icon {
+    font-size: 1.3rem;
+    margin-right: .5rem;
+  }
+
+  &__label {
+    flex: auto;
+    line-height: 1.3rem;
+  }
+}

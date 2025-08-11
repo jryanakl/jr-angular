@@ -1,0 +1,18 @@
+@import 'colors.scss';
+@import 'typography.scss';
+
+.jr-navbar__nav {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  &__link {
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $link-text-size-md;
+    font-weight: $link-text-weight;
+    min-width: 6rem;
+  }
+}

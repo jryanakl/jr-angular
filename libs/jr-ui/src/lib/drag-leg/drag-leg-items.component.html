@@ -1,0 +1,25 @@
+<ul class="list-unstyled jr-drag-leg__items" role="list" aria-label="Draggable legend items">
+  <li 
+    *ngFor="let item of items"
+    attr.aria-label="{{ item.label }} {{ item.divider ? 'divider' : '' }}"
+    class="jr-drag-leg__item" 
+    role="listitem"
+    [ngClass]="{'jr-drag-leg__item--divider': item.divider}">
+    <!-- Icon with ARIA description -->
+    <mat-icon 
+      *ngIf="item.icon"
+      aria-hidden="false" 
+      attr.aria-label="{{ item.icon }} icon"
+      class="jr-drag-leg__item__icon" 
+      [ngClass]="item.icon" 
+      role="img">
+      {{ item.icon }}
+    </mat-icon>
+    
+    <!-- Item label -->
+    <span class="jr-drag-leg__item__label">{{ item.label }}</span>
+
+    <!-- Add hidden text to describe the divider, if necessary -->
+    <span *ngIf="item.divider" class="sr-only">This is a divider.</span>
+  </li>
+</ul>

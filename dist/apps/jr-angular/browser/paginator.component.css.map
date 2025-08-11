@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["libs/jr-ui/src/lib/paginator/paginator.component.scss"],
+  "sourcesContent": ["nav {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n\nbutton {\n  padding: 0.25rem 0.5rem;\n}\n\nbutton[disabled] {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n"],
+  "mappings": ";AAAA;AACE,WAAA;AACA,eAAA;AACA,OAAA;;AAGF;AACE,WAAA,QAAA;;AAGF,MAAA,CAAA;AACE,WAAA;AACA,UAAA;;",
+  "names": []
+}

@@ -1,0 +1,17 @@
+<nav *ngIf="totalPages > 1" aria-label="Pagination">
+  <button
+    (click)="goToPage(page - 1)"
+    [disabled]="page === 1"
+    aria-label="Previous page">
+    ‹
+  </button>
+
+  <span>Page {{ page }} of {{ totalPages }}</span>
+
+  <button
+    (click)="goToPage(page + 1)"
+    [disabled]="page === totalPages"
+    aria-label="Next page">
+    ›
+  </button>
+</nav>

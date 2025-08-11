@@ -1,0 +1,72 @@
+$dark-gray: #666;
+$jr-brand-primary: red;
+$jr-box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.3);
+$jr-color-border: #333333;
+$white: #fff;
+
+.jr-drag-leg {
+  background: $white;
+  border: $jr-color-border;
+  box-shadow: $jr-box-shadow;
+  cursor: move;
+  left: 7.7rem; // Magic # Matches Keylines padding
+  position: relative;
+  top: 2rem;
+  width: 20rem;
+}
+
+.jr-drag-leg__header {
+  display: flex;
+  padding: 1rem;
+
+  &-item {
+    height: 1.9rem;
+  }
+
+  &-item--centered {
+    flex-grow: 1;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.jr-drag-leg__content {
+  padding: 1rem;
+
+  &--closed {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+}
+
+.opened {
+  animation: opened .35s ease forwards;
+}
+
+.closed {
+  animation: closed .35s ease forwards;
+}
+
+@keyframes opened {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes closed {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
