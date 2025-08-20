@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { ProductListComponent } from './product/product-list.component';
+import { ProductListComponent } from './features/product/product-list.component';
 import { JrDashboardComponent } from '../../../../libs/jr-ui/src/lib/dashboard/dashboard.component';
 import { JrDragLegComponent } from '../../../../libs/jr-ui/src/lib/drag-leg/drag-leg.component';
 import { JrLogoComponent } from '../../../../libs/jr-ui/src/lib/logo/logo.component';
@@ -53,15 +53,14 @@ import { IDragLegPane } from '../../../../libs/jr-ui/src/lib/drag-leg/models';
         </article>
       </section>
       <mat-divider></mat-divider>
-      <!-- @todo -->
-      <!-- <section class="jr-main__section">
-        <h2 class="jr-main__secondary-header">List</h2>
+      <section class="jr-main__section">
+        <h2 class="jr-main__secondary-header">Products</h2>
         <article class="jr-main__article">
           <div class="jr-main__article__code">
             <product-list></product-list>
           </div>
         </article>
-      </section> -->
+      </section>
     </main>
     <footer class="jr-footer">
       <div class="jr-footer__logo">

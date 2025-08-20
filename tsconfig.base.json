@@ -21,7 +21,7 @@
     "lib": ["ES2022", "dom"],
     "paths": {
       "@jr/ui": ["libs/jr-ui/src/index.ts"],
-      "@jr/api": ["libs/jr-api/src/index.ts"]
+      "@jr/api": ["libs/jr-api/src/index.ts"],
     }
   },
   "angularCompilerOptions": {

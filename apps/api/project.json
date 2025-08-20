@@ -1,0 +1,12 @@
+{
+  "root": "apps/api",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "json-server --watch server/db.json --port 3000"
+      }
+    }
+  }
+}

@@ -1,5 +1,12 @@
 <div class="product-list">
-  <div class="product-list__fields">
+  <ul>
+    <li *ngFor="let product of products; track ">
+       {{ product.name }}
+    </li>
+  </ul>
+
+  <!-- @todo: Implement search and sort fields -->
+  <!-- <div class="product-list__fields">
     <input type="search" (input)="onQueryChange($any($event.target).value)" />
     <select (change)="onSortChange($any($event.target).value)">
       <option value="name">Name</option>
@@ -17,7 +24,7 @@
         <li *ngFor="let item of (items$ | async)">{{ item.name }}</li>
       </ul>
       <jr-paginator [total]="(total$ | async)!" (page)="onPageChange($any($event.target).value)"></jr-paginator>
-      <p class="error" *ngIf="error$ | async as e">Error: {{ e.message }}</p>
+      <p class="error" *ngIf="error$ | async as e">Error: {{ e }}</p>
     </ng-template>
-  </div>
+  </div> -->
 </div>

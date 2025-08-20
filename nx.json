@@ -39,6 +39,9 @@
     }
   ],
   "projects": {
+    "api": {
+      "tags": []
+    },
     "jr-angular": {
       "root": "apps/jr-angular"
     },

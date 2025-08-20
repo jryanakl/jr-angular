@@ -1,6 +1,6 @@
 # JR Angular
 
-![JR Angular](/src/assets/jr-angular-app.png)
+![JR Angular](apps/jr-angular/src/assets/angular.svg)
 
 This project showcases code samples using Angular
 
@@ -22,7 +22,7 @@ This project showcases code samples using Angular
 git clone https://github.com/jryanakl/jr-angular.git
 cd jr-angular
 npm install
-ng serve
+npm run serve:all
 ```
 
 ## To view this application
