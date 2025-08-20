@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["libs/jr-ui/src/lib/logo/logo.component.scss"],
-  "sourcesContent": [".jr-logo {\n  display: inline-flex;\n  align-items: center;\n\n  &__icon {\n    font-size: 1.3rem;\n    margin-right: .5rem;\n  }\n\n  &__label {\n    flex: auto;\n    line-height: 1.3rem;\n  }\n}"],
-  "mappings": ";AAAA,CAAA;AACE,WAAA;AACA,eAAA;;AAEA,CAAA;AACE,aAAA;AACA,gBAAA;;AAGF,CAAA;AACE,QAAA;AACA,eAAA;;",
-  "names": []
-}

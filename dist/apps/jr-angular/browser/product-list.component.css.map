@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["apps/jr-angular/src/app/product/product-list.component.scss"],
-  "sourcesContent": [".product-list {\n  width: 600px;\n\n  &__fields {\n    display: grid;\n    grid-template-columns: 1fr auto;\n    gap: 1rem;\n  }\n\n  &__results {\n    display: grid;\n  }\n}"],
-  "mappings": ";AAAA,CAAA;AACE,SAAA;;AAEA,CAAA;AACE,WAAA;AACA,yBAAA,IAAA;AACA,OAAA;;AAGF,CAAA;AACE,WAAA;;",
-  "names": []
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["libs/jr-ui/src/lib/dashboard/dashboard.component.scss", "libs/jr-ui/src/styles/typography.scss"],
-  "sourcesContent": ["@import 'typography.scss';\n\n.jr-dashboard {\n  &__buttons {\n    display: flex;\n    padding: 1rem;\n  }\n\n  &__btn {\n    margin: 0.25rem;\n  }\n\n  &__p {\n    font-size: $article-text-size;\n    font-weight: $article-text-wieght;\n  }\n}\n", "$article-text-size: 0.90rem;\n$article-text-wieght: 400;\n$header-text-weight-thin: 400;\n$link-text-size-md: 0.85rem;\n$link-text-size-sm: 0.65rem;\n$link-text-weight: 500;"],
-  "mappings": ";AAGE,CAAA;AACE,WAAA;AACA,WAAA;;AAGF,CAAA;AACE,UAAA;;AAGF,CAAA;AACE,aCbgB;ADchB,eCbkB;;",
-  "names": []
-}

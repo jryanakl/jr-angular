@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["libs/jr-ui/src/lib/drag-leg/drag-leg-items.scss"],
-  "sourcesContent": ["$legend-border-color: #333333;\n\n.jr-drag-leg__items {\n  display: flex;\n  flex-direction: column;\n}\n\n.jr-drag-leg__item {\n  align-items: flex-start;\n  display: inline-flex;\n  margin: .5rem 0;\n\n  &--divider {\n    background-color: $legend-border-color;\n    height: 1px;\n    margin: .3rem 0;\n    overflow: hidden;\n  }\n  \n  &__label {\n    flex: auto;\n    line-height: 1.3rem;\n  }\n\n  &__icon {\n    font-size: 1.3rem;\n    margin-right: .5rem;\n  }\n}\n"],
-  "mappings": ";AAEA,CAAA;AACE,WAAA;AACA,kBAAA;;AAGF,CAAA;AACE,eAAA;AACA,WAAA;AACA,UAAA,OAAA;;AAEA,CAAA;AACE,oBAbkB;AAclB,UAAA;AACA,UAAA,OAAA;AACA,YAAA;;AAGF,CAAA;AACE,QAAA;AACA,eAAA;;AAGF,CAAA;AACE,aAAA;AACA,gBAAA;;",
-  "names": []
-}

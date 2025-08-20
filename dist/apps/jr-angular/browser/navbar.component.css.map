@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["libs/jr-ui/src/lib/navbar/navbar.component.scss", "libs/jr-ui/src/styles/typography.scss"],
-  "sourcesContent": ["@import 'colors.scss';\n@import 'typography.scss';\n\n.jr-navbar__nav {\n  display: flex;\n  align-items: center;\n  padding: 0.5rem 1rem;\n\n  &__link {\n    height: 40px;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    font-size: $link-text-size-md;\n    font-weight: $link-text-weight;\n    min-width: 6rem;\n  }\n}", "$article-text-size: 0.90rem;\n$article-text-wieght: 400;\n$header-text-weight-thin: 400;\n$link-text-size-md: 0.85rem;\n$link-text-size-sm: 0.65rem;\n$link-text-weight: 500;"],
-  "mappings": ";AAGA,CAAA;AACE,WAAA;AACA,eAAA;AACA,WAAA,OAAA;;AAEA,CAAA;AACE,UAAA;AACA,WAAA;AACA,eAAA;AACA,mBAAA;AACA,aCVgB;ADWhB,eCTe;ADUf,aAAA;;",
-  "names": []
-}
