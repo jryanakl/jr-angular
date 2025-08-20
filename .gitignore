@@ -5,12 +5,13 @@ build/
 out-tsc/
 *.tsbuildinfo
 
-# Angular / Nx
+# Angular / Nx caches & workspace data
 .angular/
 .angular/cache/
+.angular/cache/**/*
 .nx/
 .nx/cache/
-.nx/workspace-data
+.nx/workspace-data/
 
 # Logs
 npm-debug.log*
@@ -48,7 +49,7 @@ temp/
 *.tmp
 /.parcel-cache
 
-# Bazel
+# Bazel (present in workspace)
 bazel-*
 /bazel-out/
 /bazel-bin/
@@ -57,11 +58,6 @@ bazel-*
 # Editor swap files
 *~
 *.swp
-
-# GitHub / generated docs or instructions
-.github/instructions/*.md
-.cursor/
-.cursor/rules/*.md
 
 # Keep lockfiles tracked (do NOT ignore)
 # package-lock.json
